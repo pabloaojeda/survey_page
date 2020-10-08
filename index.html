@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+<body>
+    <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <header>
+        <h1 id="title">Book Recommendation Survey</h1> 
+    </header>
+    
+
+    <p id="description">Do you like to read? Please tell us yours favorites books</p>
+
+    <form id="survey-form">
+        <div class="input-headings">
+        <label for="name" id="name-label"> Name </label>
+        <input id="name" type="text" name="name" placeholder="Enter your name" class="form-inputs" required>
+        <br>
+
+        <label for="email" id="email-label"> Email </label>
+        <input id="email" type="email" name="email" placeholder="Enter your email" class="form-inputs" required>
+        <br>
+
+        <label for="number" id="number-label"> Age </label>
+        <input id="number" type="number" name="age" min="18" max="99" placeholder="18" class="form-inputs">
+        <br>
+
+        <label for="dropdown" id="label-genre">Select a genre</label>
+            <select id="dropdown" class="form-inputs">
+              <option value="Fantasy">Fantasy</option>
+              <option value="Adventure">Adventure</option>
+              <option value="Romance">Romance</option>
+              <option value="Mystery">Mystery</option>
+              <option value="Horror">Horror</option>
+              <option value="Fiction">Fiction</option>
+            </select>
+            <br>
+            <br>
+        <label for="reading_count" id="reading_count"> <b>How much books do you read per year?</b></label> 
+        <br>
+        <input type="radio" name="reading_count" value="12 or more books per year" >12+
+        <br>
+        <input type="radio" name="reading_count" value="6-12books per year" >6-12 
+        <br>
+        <input type="radio" name="reading_count" value="1-6 book per year" >1-6 
+        <br>
+        <label for="reading_way" id="reading_way"> <b> Reading Way </b></label> 
+        <br>
+        <input type="checkbox" name="reading_way" value="Paper" >Paper 
+        <br>
+        <input type="checkbox" name="reading_way" value="Computer" >Computer 
+        <br>
+        <input type="checkbox" name="reading_way" value="Cellphone" >Cellphone 
+        <br>
+        <input type="checkbox" name="reading_way" value="Ereader" >Ereader 
+        <br>
+        <br>
+
+        <label id="textarea"> Additional Comments</label>
+        <br>
+        <textarea id="texarea" name="comments" rows="5" cols="40"></textarea>
+        <br>
+        <br>
+
+        <input id="submit" type="submit" value="Send" class="submit-button">
+        </div>    
+    </form>
+
+</body>
+
+</html>
